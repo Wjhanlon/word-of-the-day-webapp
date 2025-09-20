@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Word</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="floating-particles" id="particles"></div>
+
+<div class="container">
+  <div class="card-container" onclick="nextStage()">
+    <div class="card" id="card">
+
+      <div class="card-face card-front stage-1">
+        <div class="message">Guess what twin...</div>
+        <div class="tap-hint">tap</div>
+      </div>
+
+      <div class="card-face card-back stage-2">
+        <div class="announcement">Word of the day...</div>
+        <div class="tap-hint">tap</div>
+      </div>
+
+      <div class="card-face card-final stage-3">
+        <div class="word" id="wordText"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
