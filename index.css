@@ -21,19 +21,16 @@ body {
 
 .card-container {
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.1s ease;
 }
 
-.card-container:hover {
-    transform: scale(1.02);
-}
 
 .card {
     width: 320px;
     height: 240px;
     position: relative;
     transform-style: preserve-3d;
-    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .card-face {
@@ -82,7 +79,7 @@ body {
 
 /* Stage 3: Final word reveal */
 .card-final {
-    transform: rotateY(180deg);
+    transform: rotateY(360deg);
     opacity: 0;
 }
 
@@ -93,11 +90,11 @@ body {
 
 /* Final reveal animation (Stage 2 -> 3) */
 .card.final-reveal {
-    transform: rotateY(180deg);
+    transform: rotateY(360deg);
 }
 
 .card.final-reveal .card-final {
-    transform: rotateY(180deg);
+    transform: rotateY(360deg);
     opacity: 1;
 
 }
